@@ -1,5 +1,6 @@
 package manager;
 
+import models.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +12,7 @@ public class BoardHelper extends HelperBase {
         super(wd);
     }
     public int getBordCount() {
-        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1;
+        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1-recentlyViewedBoardCounts();
     }
 
     public void closeBoard() {
@@ -36,6 +37,9 @@ public class BoardHelper extends HelperBase {
     public void fillBoardCreationForm(String boardName) throws InterruptedException {
         type(By.cssSelector("[data-test-id='create-board-title-input']"), boardName);
 }
+    public void fillBoardCreationForm(Board board) throws InterruptedException {
+        type(By.cssSelector("[data-test-id='create-board-title-input']"),board.getTitle());
+    }
     public  void  submitBoardCreation(){
         click(By.cssSelector("[data-test-id='create-board-submit-button']"));
     }
@@ -59,6 +63,10 @@ public class BoardHelper extends HelperBase {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
 
         click(By.cssSelector("[aria-label='BoardIcon']"));
+    }
+    public int recentlyViewedBoardCounts(){
+        return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
+
     }
     public void returnToHomePage() {click(By.cssSelector("._9Bfh6AVH84yAZe")); }
 }
