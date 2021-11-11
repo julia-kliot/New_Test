@@ -49,7 +49,6 @@ public class Login extends TestBase {
     @Test
     public void negativeLoginIncorrectEmail() throws InterruptedException {
 
-
         app.getUser().initLogin();
         app.getUser().fillLoginForm("juliakliot.jkgmail.com", "");
 
@@ -58,7 +57,7 @@ public class Login extends TestBase {
 
 
     @AfterMethod
-    public void posrConditions(){
+    public void postConditions(){
         app.getUser().clickOnLoginButton();
     }
 }
