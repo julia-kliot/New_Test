@@ -1,0 +1,166 @@
+00:48:27  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=95 in cache (valid until 01:34:37 18/11/2021 MSK)
+00:48:27  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome95=95.0.4638.69 in cache (valid until 00:34:37 19/11/2021 MSK)
+00:48:27  INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.69 (resolved driver for Chrome 95)
+00:48:27  DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 95.0.4638.69 found in cache
+00:48:27  INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\julia\.cache\selenium\chromedriver\win32\95.0.4638.69\chromedriver.exe
+00:48:29  INFO  manager.ApplicationManager - Tests starts on ChromeDriver
+00:48:58  INFO  test.TestBase - Start test--negativeLoginIncorrectEmail
+00:48:58  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+00:48:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+00:48:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+00:48:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+00:48:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-logout']
+00:48:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-logout']was found
+00:49:00  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #logout-submit
+00:49:00  INFO  manager.MyListener - Element with locator--By.cssSelector: #logout-submitwas found
+00:49:01  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href='/login']
+00:49:04  INFO  manager.MyListener - Element with locator--By.cssSelector: [href='/login']was found
+00:49:05  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+00:49:05  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+00:49:05  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+00:49:05  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+00:49:05  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+00:49:05  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+00:49:07  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:07  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:07  INFO  manager.MyListener - Stert search element by locator--By.name: password
+00:49:07  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+00:49:07  INFO  manager.MyListener - Stert search element by locator--By.name: password
+00:49:07  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+00:49:08  INFO  manager.MyListener - Stert search element by locator--By.name: password
+00:49:08  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+00:49:08  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:08  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:08  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:08  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:08  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:49:08  INFO  test.TestBase - Start test--negativeLoginwithoutEmail
+00:49:08  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+00:49:18  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+00:49:18  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href='/login']
+00:49:18  INFO  manager.MyListener - Element with locator--By.cssSelector: [href='/login']was found
+00:49:28  INFO  manager.MyListener - Something went wrong!!!!!
+00:49:28  INFO  manager.MyListener - element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:49:28  INFO  manager.MyListener - org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:49:28  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--2968.png
+00:49:28  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:28  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:28  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:28  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:28  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:49:28  INFO  test.TestBase - Start test--negativeLoginwithoutPassword
+00:49:28  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+00:49:38  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+00:49:38  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href='/login']
+00:49:38  INFO  manager.MyListener - Element with locator--By.cssSelector: [href='/login']was found
+00:49:48  INFO  manager.MyListener - Something went wrong!!!!!
+00:49:48  INFO  manager.MyListener - element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:49:48  INFO  manager.MyListener - org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:49:49  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--2988.png
+00:49:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:49  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:49:49  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:49:49  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:49:49  INFO  test.TestBase - Start test--testLogin
+00:49:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+00:49:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+00:49:59  INFO  test.TestBase - Login Tests starts with:juliakliot.jk@gmail.com   misha240613
+00:49:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href='/login']
+00:49:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [href='/login']was found
+00:50:09  INFO  manager.MyListener - Something went wrong!!!!!
+00:50:09  INFO  manager.MyListener - element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:50:09  INFO  manager.MyListener - org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+00:50:09  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--3009.png
+00:50:09  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:50:10  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:50:10  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+00:50:10  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+00:50:10  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:50:10  INFO  test.TestBase - Start test--testBoardCreation
+00:50:10  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-create-menu-button']
+00:50:20  INFO  manager.MyListener - Something went wrong!!!!!
+00:50:20  INFO  manager.MyListener - no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-menu-button']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+*** Element info: {Using=css selector, value=[data-test-id='header-create-menu-button']}
+00:50:20  INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-menu-button']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+*** Element info: {Using=css selector, value=[data-test-id='header-create-menu-button']}
+00:50:20  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--3020.png
+00:50:20  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:50:20  INFO  test.TestBase - Start test--testBoardCreation2
+00:50:20  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .boards-page-board-section-list-item
+00:50:30  INFO  manager.MyListener - Element with locator--By.cssSelector: .boards-page-board-section-list-itemwas found
+00:50:30  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+00:50:40  INFO  manager.MyListener - Element with locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//liwas found
+00:50:40  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-create-menu-button']
+00:50:50  INFO  manager.MyListener - Something went wrong!!!!!
+00:50:50  INFO  manager.MyListener - no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-menu-button']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+*** Element info: {Using=css selector, value=[data-test-id='header-create-menu-button']}
+00:50:50  INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test-id='header-create-menu-button']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cfbca8b3e9ac6032422da0b23552aa1
+*** Element info: {Using=css selector, value=[data-test-id='header-create-menu-button']}
+00:50:51  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--3050.png
+00:50:51  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+00:50:51  INFO  manager.ApplicationManager - Tests passed
