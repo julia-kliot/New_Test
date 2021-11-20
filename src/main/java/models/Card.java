@@ -9,8 +9,7 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
-public class Board {
-     private String title;
 
-
+public class Card {
+    private String card;
 }

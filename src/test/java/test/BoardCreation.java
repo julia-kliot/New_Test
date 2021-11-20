@@ -10,7 +10,8 @@ public class BoardCreation extends TestBase {
 
     @Test
     public void testBoardCreation() throws InterruptedException {
-       Board board = new Board().withTitle("test");
+      // Board board = new Board().withTitle("test");
+       Board board = Board.builder().title("test").build();
        //int bordCountBeforeCreation = app.getBoard().getBordCount();
 
         app.getBoard().initBoardCreationfromHeader();
@@ -28,9 +29,10 @@ public class BoardCreation extends TestBase {
         //Assert.assertEquals(bordCountBeforeCreation, bordCountAfterCreation + 1);
 Assert.assertTrue(app.getBoard().isCreated());
     }
-    @Test
+    @Test(enabled = false)
     public void testBoardCreation2() throws InterruptedException {
-        Board board = new Board().withTitle("test");
+        Board board = Board.builder().title("test 2").build();
+
         int bordCountBeforeCreation = app.getBoard().getBordCount();
         System.out.println(bordCountBeforeCreation);
         app.getBoard().initBoardCreationfromHeader();

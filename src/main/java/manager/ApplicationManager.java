@@ -21,6 +21,8 @@ public class ApplicationManager {
     BoardHelper board;
     UserHelper user;
     String browser;
+    CardHelper card;
+    ListHelper list;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -43,6 +45,8 @@ public class ApplicationManager {
 
       board = new BoardHelper(wd);
       user = new UserHelper(wd);
+      card = new CardHelper(wd);
+      list = new ListHelper(wd);
         user.login("juliakliot.jk@gmail.com","misha240613");
         wd.register(new MyListener());
 
@@ -59,5 +63,13 @@ public class ApplicationManager {
 
     public UserHelper getUser() {
         return user;
+    }
+
+    public CardHelper getCard() {
+        return card;
+    }
+
+    public ListHelper getList() {
+        return list;
     }
 }
