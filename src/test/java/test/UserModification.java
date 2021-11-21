@@ -1,31 +1,30 @@
 package test;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class UserModificationTests extends TestBase {
+public class UserModification extends TestBase {
 
 
     @Test
     public void test() throws InterruptedException {
-        app.session().openTabAndSwitchToIt();
+        app.getUser().openTabAndSwitchToIt();
     }
 
     @Test
     public void testChangeUserAvatar() throws InterruptedException {
-        app.session().clickOnAvatar();
-        app.session().openUsersProfile();
-        app.session().goToAtlassianAccount();
+        app.getUser().clickOnAvatar();
+        app.getUser().openUsersProfile();
+        app.getUser().goToAtlassianAccount();
         Thread.sleep(7000);
         String url = app.getURL();
         Assert.assertEquals(url, "https://id.atlassian.com/manage-profile/profile-and-visibility", "Wrong url" + app.getURL());
 
-        app.atlassian().initChangePhoto();
-        app.atlassian().uploadPhoto();
+        app.getAtlassian().initChangePhoto();
+        app.getAtlassian().uploadPhoto();
 
 
-        app.session().returnToTrelloFromAtlassian();
+        app.getUser().returnToTrelloFromAtlassian();
         String currUrl = app.getURL();
         Assert.assertTrue(currUrl.contains("https://trello.com/"), "Current Url is " + app.getURL());
 
@@ -33,5 +32,3 @@ public class UserModificationTests extends TestBase {
     }
 
 }
-© 2021 GitHub, Inc.
-        Term

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HelperBase {
     WebDriver wd;
@@ -21,6 +23,26 @@ public class HelperBase {
         wd.findElement(locator2).clear();
         wd.findElement(locator2).sendKeys(text);
     }
+    public void waitForElementAndClick(By locator, int time) {
+        new WebDriverWait(wd, time).until(ExpectedConditions.elementToBeClickable(locator)).click();
+        // wd.findElement(locator).click();
+    }
+    public void openTabAndSwitchToIt() throws InterruptedException {
+        ((JavascriptExecutor)wd).executeScript("window.open()");
+
+        List<String> tabs = new ArrayList<>(wd.getWindowHandles());
+        wd.switchTo().window(tabs.get(1));
+        wd.navigate().to("https://google.com");
+        Thread.sleep(10000);
+    }
+
+    public void attachFile(By locator, File file) {
+        // if(file.!=null){
+        wd.findElement(locator).sendKeys(file.getAbsolutePath());
+        //   }
+    }
+
+
 
 
     public void click(By locator) {

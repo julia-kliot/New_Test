@@ -15,14 +15,15 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
-    Logger logger= LoggerFactory.getLogger(ApplicationManager.class);
-   // WebDriver wd;
+    Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
+    // WebDriver wd;
     EventFiringWebDriver wd;
     BoardHelper board;
     UserHelper user;
     String browser;
     CardHelper card;
     ListHelper list;
+    AtlassianHelper atlassian;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -30,32 +31,35 @@ public class ApplicationManager {
 
     public void init() throws InterruptedException {
 
-        if(browser.equals(BrowserType.CHROME)){
-            wd= new EventFiringWebDriver(new ChromeDriver());
-        } else if (browser.equals(BrowserType.EDGE)){
-            wd= new EventFiringWebDriver(new EdgeDriver());
+        if (browser.equals(BrowserType.CHROME)) {
+            wd = new EventFiringWebDriver(new ChromeDriver());
+        } else if (browser.equals(BrowserType.EDGE)) {
+            wd = new EventFiringWebDriver(new EdgeDriver());
         }
-      ChromeOptions chromeOptions = new ChromeOptions();
-      WebDriverManager.chromedriver().setup();
-      wd= new EventFiringWebDriver(new ChromeDriver());
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\julia\\Documents\\QA\\QA_Automation\\QA\\New_Test\\chromedriver.exe");wd.manage().window().maximize();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        WebDriverManager.chromedriver().setup();
+        wd = new EventFiringWebDriver(new ChromeDriver());
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\julia\\Documents\\QA\\QA_Automation\\QA\\New_Test\\chromedriver.exe");
+        wd.manage().window().maximize();
         logger.info("Tests starts on ChromeDriver");
-      wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-      wd.navigate().to("https://trello.com/");
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.navigate().to("https://trello.com/");
 
-      board = new BoardHelper(wd);
-      user = new UserHelper(wd);
-      card = new CardHelper(wd);
-      list = new ListHelper(wd);
-        user.login("juliakliot.jk@gmail.com","misha240613");
+        board = new BoardHelper(wd);
+        user = new UserHelper(wd);
+        card = new CardHelper(wd);
+        list = new ListHelper(wd);
+        atlassian = new AtlassianHelper(wd);
+        user.login("juliakliot.jk@gmail.com", "misha240613");
         wd.register(new MyListener());
 
     }
-  public void stop(){
+
+    public void stop() {
         logger.info("Tests passed");
         wd.quit();
 
-  }
+    }
 
     public BoardHelper getBoard() {
         return board;
@@ -71,5 +75,12 @@ public class ApplicationManager {
 
     public ListHelper getList() {
         return list;
+    }
+
+    public AtlassianHelper getAtlassian() {
+        return atlassian;
+    }
+    public String getURL() {
+        return wd.getCurrentUrl();
     }
 }
