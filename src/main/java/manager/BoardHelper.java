@@ -3,6 +3,7 @@ package manager;
 import models.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -69,5 +70,7 @@ public class BoardHelper extends HelperBase {
 
     }
     public void returnToHomePage() {click(By.cssSelector("._9Bfh6AVH84yAZe")); }
+
+    WebElement container= wd.findElement();
 }
 
