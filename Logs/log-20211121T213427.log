@@ -1,0 +1,45 @@
+21:34:29  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=96 in cache (valid until 22:24:22 21/11/2021 MSK)
+21:34:29  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome96=96.0.4664.45 in cache (valid until 21:24:22 22/11/2021 MSK)
+21:34:29  INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+21:34:29  DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 96.0.4664.45 found in cache
+21:34:29  INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\julia\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+21:34:31  INFO  manager.ApplicationManager - Tests starts on ChromeDriver
+21:34:59  INFO  test.TestBase - Start test--testChangeUserAvatar
+21:34:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id=header-member-menu-button]
+21:34:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id=header-member-menu-button]was found
+21:34:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-profile']
+21:34:59  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-profile']was found
+21:34:59  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href$='manage-profile']
+21:35:00  INFO  manager.MyListener - Element with locator--By.cssSelector: [href$='manage-profile']was found
+21:35:07  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-selector='profile-avatar']
+21:35:07  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-selector='profile-avatar']was found
+21:35:07  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .css-j9ugw7
+21:35:07  INFO  manager.MyListener - Element with locator--By.cssSelector: .css-j9ugw7was found
+21:35:07  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[@role='menuitem'][1]
+21:35:07  INFO  manager.MyListener - Element with locator--By.xpath: //*[@role='menuitem'][1]was found
+21:35:07  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [id=image-input]
+21:35:08  INFO  manager.MyListener - Element with locator--By.cssSelector: [id=image-input]was found
+21:35:08  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .css-19r5em7
+21:35:08  INFO  manager.MyListener - Element with locator--By.cssSelector: .css-19r5em7was found
+21:35:08  INFO  manager.MyListener - Something went wrong!!!!!
+21:35:08  INFO  manager.MyListener - stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd0040e3d335f6664e0814730e42744a
+21:35:08  INFO  manager.MyListener - org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BETKQUU3', ip: '192.168.243.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd0040e3d335f6664e0814730e42744a
+21:35:08  INFO  manager.MyListener - This link to screenshot with error--src/test/screenshots/scrrenshot--2108.png
+21:35:08  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .css-19r5em7
+21:35:09  INFO  manager.MyListener - Element with locator--By.cssSelector: .css-19r5em7was found
+21:35:14  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21:35:14  INFO  manager.ApplicationManager - Tests passed

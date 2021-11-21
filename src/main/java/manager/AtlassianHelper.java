@@ -14,15 +14,15 @@ public class AtlassianHelper extends HelperBase{
     public void initChangePhoto() {
         new Actions(wd)
                 .moveToElement(wd.findElement(By.cssSelector("[data-test-selector='profile-avatar']")))
-                .pause(3).click(wd.findElement(By.cssSelector(".css-fbv3aj"))).perform();
+                .pause(3).click(wd.findElement(By.cssSelector(".css-j9ugw7"))).perform();
         click(By.xpath("//*[@role='menuitem'][1]"));
     }
 
     public void uploadPhoto() throws InterruptedException {
         attachFile(By.cssSelector("[id=image-input]"),
-                new File("C:\\Users\\Elena\\Documents\\GitHub\\qa28TrelloElena\\src\\test\\resources\\cat_small.png"));
+                new File("C:\\Users\\julia\\Documents\\QA\\QA_Automation\\QA\\New_Test\\src\\test\\resources\\download.jfif"));
 
-        waitForElementAndClick(By.xpath("//*[contains(.,'Upload')]/.."), 10);
+        waitForElementAndClick(By.cssSelector(".css-19r5em7"), 10);
         Thread.sleep(5000);
     }
 }
