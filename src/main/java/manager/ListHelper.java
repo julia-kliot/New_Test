@@ -13,4 +13,9 @@ public class ListHelper extends HelperBase {
         type(By.cssSelector(".list-name-input"), listName);
         click(By.cssSelector(".js-save-edit"));
     }
+
+    public int getCount() {
+        return  wd.findElements(By.cssSelector(".list")).size();
+
+    }
 }

@@ -18,7 +18,21 @@ click(By.cssSelector(".js-add-a-card"));
         type(By.cssSelector(".js-card-title"), cardName);
     }
     public void fillCreationForm( Card card) {
-        type(By.cssSelector(".js-card-title"), card.getCard());
+        type(By.cssSelector(".js-card-title"), card.getCardName());
+        if (card.getColor() != null) {
+            openCardMenu();
+            selectLable();
+            click(By.cssSelector("[data-color=" + card.getColor() + "]"));
+
+        }
+    }
+
+    public void selectLable() {
+        click(By.cssSelector(".js-label-selector"));
+    }
+
+    public void openCardMenu() {
+        click(By.cssSelector(".js-cc-menu"));
     }
 
     public void submitCreation() {

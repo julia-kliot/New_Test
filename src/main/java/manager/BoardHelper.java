@@ -2,8 +2,10 @@ package manager;
 
 import models.Board;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -71,6 +73,13 @@ public class BoardHelper extends HelperBase {
     }
     public void returnToHomePage() {click(By.cssSelector("._9Bfh6AVH84yAZe")); }
 
-    WebElement container= wd.findElement();
+public void newCreation(){
+    Actions action = new Actions(wd);
+    WebElement container= wd.findElement(By.cssSelector("[data-test-id='header-create-menu-popover']"));
+    Rectangle rect = container.getRect();
+    int x= rect.getX()+10;
+    int y = rect.getY()+rect.getHeight()/2;
+    action.moveByOffset(x,y).click().perform();
+}
 }
 

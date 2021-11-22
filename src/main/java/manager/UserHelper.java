@@ -89,5 +89,6 @@ public class UserHelper extends HelperBase {
             click (By.cssSelector("#login"));
         }
     }
+
 }
 

@@ -55,11 +55,16 @@ public class BoardCreation extends TestBase {
         //Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(enabled = false)
-    public void testBoardCreation3() {
-        //Actions action = new Actions(wd);
-
-
+    @Test
+    public void testBoardCreation3() throws InterruptedException {
+        Board board = Board.builder().title("test 2").build();
+        app.getBoard().initBoardCreationfromHeader();
+        app.getBoard().fillBoardCreationForm(board);
+       app.getBoard().newCreation();
+       Thread.sleep(5000);
+        app.getBoard().submitBoardCreation();
+        app.getBoard().isCreated();
+        app.getBoard().returnToHomePage();
     }
 }
 

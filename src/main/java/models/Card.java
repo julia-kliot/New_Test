@@ -11,5 +11,6 @@ import lombok.ToString;
 @ToString
 
 public class Card {
-    private String card;
+    private String cardName;
+    private  String color;
 }
