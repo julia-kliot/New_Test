@@ -2,7 +2,7 @@
 <suite name="log">
     <groups>
         <run>
-            <include name="smoke"/>
+            <include name="lo"/>
         </run>
     </groups>
     <test name="log">

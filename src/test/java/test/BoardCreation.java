@@ -1,5 +1,6 @@
 package test;
 
+import manager.MyDataProvider;
 import models.Board;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -55,7 +56,7 @@ public class BoardCreation extends TestBase {
         //Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test
+    @Test(dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
     public void testBoardCreation3() throws InterruptedException {
         Board board = Board.builder().title("test 2").build();
         app.getBoard().initBoardCreationfromHeader();

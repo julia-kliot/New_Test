@@ -11,7 +11,7 @@ public class UserModification extends TestBase {
         app.getUser().openTabAndSwitchToIt();
     }
 
-    @Test
+    @Test()
     public void testChangeUserAvatar() throws InterruptedException {
         app.getUser().clickOnAvatar();
         app.getUser().openUsersProfile();

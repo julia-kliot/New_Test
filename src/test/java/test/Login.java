@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preConditions() {
         if (app.getUser().isLogged()) {
             app.getUser().logOut();
@@ -17,7 +17,7 @@ public class Login extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"lo"})
     public void testLogin() throws InterruptedException {
         //User user = new User().withEmail("juliakliot.jk@gmail.com").withPassword("misha240613");
 
@@ -59,7 +59,7 @@ public class Login extends TestBase {
     }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postConditions(){
         app.getUser().clickOnLoginButton();
     }
