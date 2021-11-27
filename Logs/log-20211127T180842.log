@@ -1,0 +1,7 @@
+18:08:43  INFO  test.TestBase - Start test--testLogin
+18:08:43  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18:08:43  INFO  test.TestBase - Start test--testBoardCreation2
+18:08:43  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18:08:43  INFO  test.TestBase - Start test--testBoardCreation2
+18:08:43  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18:08:43  INFO  manager.ApplicationManager - Tests passed

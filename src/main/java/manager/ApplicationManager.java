@@ -11,6 +11,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -24,12 +29,16 @@ public class ApplicationManager {
     CardHelper card;
     ListHelper list;
     AtlassianHelper atlassian;
+    Properties properties;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
+        properties = new Properties();
     }
 
-    public void init() throws InterruptedException {
+    public void init() throws InterruptedException, IOException {
+        String target = System.setProperty("target", "config");
+        properties.load(new FileReader(new File(String.format("src/test/resources/config.properties/%s", target))));
 
         if (browser.equals(BrowserType.CHROME)) {
             wd = new EventFiringWebDriver(new ChromeDriver());
@@ -43,8 +52,8 @@ public class ApplicationManager {
         wd.manage().window().maximize();
         logger.info("Tests starts on ChromeDriver");
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wd.navigate().to("https://trello.com/");
-
+        //wd.navigate().to("https://trello.com/");
+        wd.navigate().to(properties.getProperty("web.baseUrl"));
         board = new BoardHelper(wd);
         user = new UserHelper(wd);
         card = new CardHelper(wd);
@@ -80,6 +89,7 @@ public class ApplicationManager {
     public AtlassianHelper getAtlassian() {
         return atlassian;
     }
+
     public String getURL() {
         return wd.getCurrentUrl();
     }

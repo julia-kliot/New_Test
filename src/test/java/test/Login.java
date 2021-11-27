@@ -17,7 +17,7 @@ public class Login extends TestBase {
 
     }
 
-    @Test(groups = {"lo"})
+    @Test(groups = {"logs"})
     public void testLogin() throws InterruptedException {
         //User user = new User().withEmail("juliakliot.jk@gmail.com").withPassword("misha240613");
 
@@ -35,21 +35,21 @@ public class Login extends TestBase {
         //Assert.assertTrue(app.getUser().returnToHomePage();
     }
 
-    @Test
+    @Test(groups = {"logs_neg"})
     public void negativeLoginwithoutPassword() throws InterruptedException {
         app.getUser().initLogin();
         app.getUser().fillLoginForm("juliakliot.jk@gmail.com", "");
         app.getUser().submitLogin();
 
     }
-    @Test
+    @Test(groups = {"logs_neg"})
     public void negativeLoginwithoutEmail() throws InterruptedException {
         app.getUser().initLogin();
         app.getUser().fillLoginForm("", "");
 
 
     }
-    @Test
+    @Test(groups = {"logs_neg"})
     public void negativeLoginIncorrectEmail() throws InterruptedException {
 
         app.getUser().initLogin();

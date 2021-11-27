@@ -9,13 +9,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 public class TestBase {
     protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
     Logger logger= LoggerFactory.getLogger(TestBase.class);
     @BeforeSuite (alwaysRun = true)
-    public void setUp() throws InterruptedException {
+    public void setUp() throws InterruptedException, IOException {
         app.init();
 
     }

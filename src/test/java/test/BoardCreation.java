@@ -13,7 +13,7 @@ import javax.swing.*;
 public class BoardCreation extends TestBase {
 
 
-    @Test
+    @Test (enabled = false)
     public void testBoardCreation() throws InterruptedException {
         // Board board = new Board().withTitle("test");
         Board board = Board.builder().title("test").build();
@@ -35,7 +35,7 @@ public class BoardCreation extends TestBase {
         Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(enabled = false)
+    @Test(groups = {"logs"}, invocationCount = 2)
     public void testBoardCreation2() throws InterruptedException {
         Board board = Board.builder().title("test 2").build();
 
@@ -44,7 +44,6 @@ public class BoardCreation extends TestBase {
         app.getBoard().initBoardCreationfromHeader();
         //app.getBoard().fillBoardCreationForm("test");
         app.getBoard().fillBoardCreationForm(board);
-
         app.getBoard().isSubmitionConfirmed();
         app.getBoard().submitBoardCreation();
         app.getBoard().isCreated();
@@ -56,7 +55,7 @@ public class BoardCreation extends TestBase {
         //Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
+    @Test(groups = {"logs"}, invocationCount = 2, dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
     public void testBoardCreation3() throws InterruptedException {
         Board board = Board.builder().title("test 2").build();
         app.getBoard().initBoardCreationfromHeader();

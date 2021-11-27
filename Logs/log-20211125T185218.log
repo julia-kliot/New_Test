@@ -1,0 +1,7 @@
+18:52:20  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=96 in cache (valid until 19:47:25 25/11/2021 MSK)
+18:52:20  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome96=96.0.4664.45 in cache (valid until 01:22:48 26/11/2021 MSK)
+18:52:20  INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+18:52:20  DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 96.0.4664.45 found in cache
+18:52:20  INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\julia\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+18:52:22  INFO  manager.ApplicationManager - Tests starts on ChromeDriver
+18:52:50  INFO  manager.ApplicationManager - Tests passed
