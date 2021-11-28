@@ -32,7 +32,7 @@ public class UserHelper extends HelperBase {
     }
 
 
-    public boolean isLogged()  {
+    public boolean isLogged(User.UserBuilder password)  {
         return wd.findElements(By.cssSelector("[data-test-id='header-member-menu-button']")).size()>0;
 
     }

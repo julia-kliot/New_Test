@@ -11,13 +11,13 @@ public class Login extends TestBase {
 
     @BeforeMethod(alwaysRun = true)
     public void preConditions() {
-        if (app.getUser().isLogged()) {
+        if (app.getUser().isLogged(User.builder().email(app.email()).password(app.password()))) {
             app.getUser().logOut();
         }
 
     }
 
-    @Test(groups = {"logs"})
+    @Test
     public void testLogin() throws InterruptedException {
         //User user = new User().withEmail("juliakliot.jk@gmail.com").withPassword("misha240613");
 

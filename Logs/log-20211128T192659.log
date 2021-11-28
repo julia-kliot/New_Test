@@ -1,0 +1,46 @@
+19:27:02  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=96 in cache (valid until 20:22:17 28/11/2021 MSK)
+19:27:02  DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome96=96.0.4664.45 in cache (valid until 19:22:17 29/11/2021 MSK)
+19:27:02  INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+19:27:02  DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 96.0.4664.45 found in cache
+19:27:02  INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\julia\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+19:27:04  INFO  manager.ApplicationManager - Tests starts on ChromeDriver
+19:27:37  INFO  test.TestBase - Start test--testLogin
+19:27:37  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+19:27:37  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+19:27:37  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-button']
+19:27:37  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-button']was found
+19:27:38  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-member-menu-logout']
+19:27:38  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-member-menu-logout']was found
+19:27:40  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #logout-submit
+19:27:40  INFO  manager.MyListener - Element with locator--By.cssSelector: #logout-submitwas found
+19:27:42  INFO  test.TestBase - Login Tests starts with:juliakliot.jk@gmail.com   misha240613
+19:27:42  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [href='/login']
+19:27:47  INFO  manager.MyListener - Element with locator--By.cssSelector: [href='/login']was found
+19:27:48  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+19:27:48  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+19:27:48  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+19:27:48  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+19:27:48  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #user
+19:27:48  INFO  manager.MyListener - Element with locator--By.cssSelector: #userwas found
+19:27:50  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+19:27:50  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+19:27:51  INFO  manager.MyListener - Stert search element by locator--By.name: password
+19:27:51  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+19:27:52  INFO  manager.MyListener - Stert search element by locator--By.name: password
+19:27:52  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+19:27:52  INFO  manager.MyListener - Stert search element by locator--By.name: password
+19:27:52  INFO  manager.MyListener - Element with locator--By.name: passwordwas found
+19:28:07  INFO  manager.MyListener - Stert search element by locator--By.id: login-submit
+19:28:07  INFO  manager.MyListener - Element with locator--By.id: login-submitwas found
+19:28:07  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+19:28:17  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+19:28:17  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+19:28:17  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+19:28:17  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+19:28:17  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+19:28:17  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+19:28:17  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+19:28:17  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: #login
+19:28:27  INFO  manager.MyListener - Element with locator--By.cssSelector: #loginwas found
+19:28:27  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+19:28:27  INFO  manager.ApplicationManager - Tests passed

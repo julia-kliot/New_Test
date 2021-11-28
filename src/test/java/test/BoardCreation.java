@@ -55,7 +55,7 @@ public class BoardCreation extends TestBase {
         //Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(groups = {"logs"}, invocationCount = 2, dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
     public void testBoardCreation3() throws InterruptedException {
         Board board = Board.builder().title("test 2").build();
         app.getBoard().initBoardCreationfromHeader();

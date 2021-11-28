@@ -1,0 +1,3 @@
+18:59:28  INFO  test.TestBase - Start test--testLogin
+18:59:28  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18:59:28  INFO  manager.ApplicationManager - Tests passed

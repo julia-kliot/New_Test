@@ -37,8 +37,8 @@ public class ApplicationManager {
     }
 
     public void init() throws InterruptedException, IOException {
-        String target = System.setProperty("target", "config");
-        properties.load(new FileReader(new File(String.format("src/test/resources/config.properties/%s", target))));
+        String target = System.getProperty("target", "config");
+        properties.load(new FileReader(String.format("src/test/resources/%s.properties",target)));
 
         if (browser.equals(BrowserType.CHROME)) {
             wd = new EventFiringWebDriver(new ChromeDriver());
@@ -93,4 +93,8 @@ public class ApplicationManager {
     public String getURL() {
         return wd.getCurrentUrl();
     }
+    public  String email(){
+        return properties.getProperty("web.email");}
+    public  String password(){
+        return properties.getProperty("web.password");}
 }
