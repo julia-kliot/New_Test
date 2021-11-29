@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.BoardCreation" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-29T19:24:39" hostname="LAPTOP-BETKQUU3" time="20.202">
+  <properties/>
+  <testcase name="testBoardCreation2" classname="test.BoardCreation" time="16.58"/>
+  <testcase name="testBoardCreation2" classname="test.BoardCreation" time="3.616"/>
+  <system-out><![CDATA[22:24:39  INFO  test.TestBase - Start test--testBoardCreation2
+22:24:39  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .boards-page-board-section-list-item
+22:24:39  INFO  manager.MyListener - Element with locator--By.cssSelector: .boards-page-board-section-list-itemwas found
+22:24:39  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+22:24:49  INFO  manager.MyListener - Element with locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//liwas found
+26
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-create-menu-button']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-create-menu-button']was found
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [aria-label='BoardIcon']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [aria-label='BoardIcon']was found
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:49  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:49  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:52  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:52  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:52  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:52  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:52  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .list-name-input
+22:24:54  INFO  manager.MyListener - Element with locator--By.cssSelector: .list-name-inputwas found
+22:24:54  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .list-name-input
+22:24:54  INFO  manager.MyListener - Element with locator--By.cssSelector: .list-name-inputwas found
+22:24:54  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+22:24:54  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+22:24:54  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .boards-page-board-section-list-item
+22:24:55  INFO  manager.MyListener - Element with locator--By.cssSelector: .boards-page-board-section-list-itemwas found
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+22:24:55  INFO  manager.MyListener - Element with locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//liwas found
+27
+22:24:55  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+22:24:55  INFO  test.TestBase - Start test--testBoardCreation2
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .boards-page-board-section-list-item
+22:24:55  INFO  manager.MyListener - Element with locator--By.cssSelector: .boards-page-board-section-list-itemwas found
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+22:24:55  INFO  manager.MyListener - Element with locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//liwas found
+27
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='header-create-menu-button']
+22:24:55  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='header-create-menu-button']was found
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [aria-label='BoardIcon']
+22:24:55  INFO  manager.MyListener - Element with locator--By.cssSelector: [aria-label='BoardIcon']was found
+22:24:55  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:55  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:56  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-title-input']
+22:24:56  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-title-input']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:56  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:56  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: [data-test-id='create-board-submit-button']
+22:24:56  INFO  manager.MyListener - Element with locator--By.cssSelector: [data-test-id='create-board-submit-button']was found
+22:24:56  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .list-name-input
+22:24:58  INFO  manager.MyListener - Element with locator--By.cssSelector: .list-name-inputwas found
+22:24:58  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .list-name-input
+22:24:58  INFO  manager.MyListener - Element with locator--By.cssSelector: .list-name-inputwas found
+22:24:58  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: ._9Bfh6AVH84yAZe
+22:24:58  INFO  manager.MyListener - Element with locator--By.cssSelector: ._9Bfh6AVH84yAZewas found
+22:24:58  INFO  manager.MyListener - Stert search element by locator--By.cssSelector: .boards-page-board-section-list-item
+22:24:59  INFO  manager.MyListener - Element with locator--By.cssSelector: .boards-page-board-section-list-itemwas found
+22:24:59  INFO  manager.MyListener - Stert search element by locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//li
+22:24:59  INFO  manager.MyListener - Element with locator--By.xpath: //*[contains(@class,'icon-clock')]/../../..//liwas found
+28
+22:24:59  INFO  test.TestBase - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
