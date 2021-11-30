@@ -93,6 +93,7 @@ public class ApplicationManager {
     public String getURL() {
         return wd.getCurrentUrl();
     }
+
     public  String email(){
         return properties.getProperty("web.email");}
     public  String password(){

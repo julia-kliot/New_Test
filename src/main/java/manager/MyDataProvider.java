@@ -13,6 +13,9 @@ import java.util.List;
 
 public class MyDataProvider {
 
+
+
+
     @DataProvider
     public Iterator<Object[]> boardCSV() throws IOException {
         List<Object[]> list = new ArrayList<>();
@@ -20,10 +23,10 @@ public class MyDataProvider {
         reader.readLine();
         String line = reader.readLine();
         while (line != null) {
-            String[] split = line.split(",");
-            list.add(new Object[]{
-                    Board.builder().title(split[0]).build()});
-            line = reader.readLine();
+            //String[] split = line.split(",");
+            //list.add(new Object[]{
+                   // Board.builder().title(split[0]).build()});
+            //line = reader.readLine();
         }
         return list.iterator();
     }

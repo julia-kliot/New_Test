@@ -56,8 +56,9 @@ public class BoardCreation extends TestBase {
     }
 
     @Test(dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
-    public void testBoardCreation3() throws InterruptedException {
-        Board board = Board.builder().title("test 2").build();
+    public void testBoardCreation3(Board board) throws InterruptedException {
+        //Board board = Board.builder().title("test 2").build();
+
         app.getBoard().initBoardCreationfromHeader();
         app.getBoard().fillBoardCreationForm(board);
        app.getBoard().newCreation();
