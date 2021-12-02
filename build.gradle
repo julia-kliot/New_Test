@@ -32,7 +32,7 @@ task log(type: Test){
         if (groups != null) {includeGroups groups}
 
         def suite = System.getProperty('suite', '')
-        if (suite.equals('log')) {
+        if (suite.equals('lo')) {
             suites 'src/test/resources/logng.xml'
         } else if (suite.equals('smoke')) {
             suites 'src/test/resources/smoke.xml'

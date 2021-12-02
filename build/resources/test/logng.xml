@@ -1,9 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="log">
-    <test name="login">
+    <groups>
+        <run>
+            <include name="del"/>
+        </run>
+    </groups>
+    <test name="log">
         <classes>
             <class name="test.Login"/>
+            <class name="test.BoardDeleteion"/>
 
         </classes>
     </test>
 </suite>
+
+

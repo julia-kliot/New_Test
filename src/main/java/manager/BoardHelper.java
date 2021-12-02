@@ -21,8 +21,9 @@ public class BoardHelper extends HelperBase {
     public void closeBoard() {
         click(By.cssSelector(".js-close-board"));
         click(By.cssSelector(".js-confirm"));
-        click(By.cssSelector(".js-delete"));
-        click(By.cssSelector(".js-confirm"));
+        click(By.cssSelector("[data-test-id='close-board-delete-board-button'"));
+        //click(By.cssSelector(".js-confirm"));
+       click((By.cssSelector("[data-test-id='close-board-delete-board-confirm-button']")));
     }
 
     public void openMore() {

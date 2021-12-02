@@ -35,7 +35,7 @@ public class BoardCreation extends TestBase {
         Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(groups = {"logs"}, invocationCount = 2)
+    @Test (groups = {"logs"})
     public void testBoardCreation2() throws InterruptedException {
         Board board = Board.builder().title("test 2").build();
 
@@ -55,17 +55,18 @@ public class BoardCreation extends TestBase {
         //Assert.assertTrue(app.getBoard().isCreated());
     }
 
-    @Test(dataProvider = "boardCSV", dataProviderClass = MyDataProvider.class)
+    @Test
     public void testBoardCreation3(Board board) throws InterruptedException {
         //Board board = Board.builder().title("test 2").build();
-
         app.getBoard().initBoardCreationfromHeader();
         app.getBoard().fillBoardCreationForm(board);
        app.getBoard().newCreation();
        Thread.sleep(5000);
         app.getBoard().submitBoardCreation();
         app.getBoard().isCreated();
-        app.getBoard().returnToHomePage();
+        //app.getBoard().returnToHomePage();
+
+
     }
 }
 
